@@ -1,2 +1,5 @@
 # CS-361
-Repository for CS 361 (Software Engineering 1)
+
+Hi, my name is Henry. I am currently a junior at Oregon State University majoring in Computer Science.
+
+I like 🐢's
