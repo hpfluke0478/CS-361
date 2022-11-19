@@ -1,18 +1,11 @@
-Communication Contract:
+Requesting data: In SimpleMicro.py, the 'Notepad Directory' queue is declared to then consume contents within the body of callback. Once called,
+		 callback appends the contents of body (I,e. the note entered by the user) to the 'notes' array for later access.
 
-1. Communicate through discord.
+Receiving data: Data is received in 2 cases by the microservice. 
 
-2. 24 hour response time.
+	Case 1: call getNote
+		Once called, getnote sends the contents of the 'makeNote' textbox to the body of callback for storage.
+	Case 2 - Special Case: call importNote (Unfinished, tips appreciated)
+		Once called, get note should request the contents of 'notes' from SimpleMicro.py via basic_consume() and print them line by line to 'showNotes.'
 
-3. Be respectful.
-
-4. Set up a mutual time to work on projects each week.
-
-5. Let partner know if something comes up and you need to find a different time to work.
-
-6. No cuts, no buts, no coconuts.
-
-Recieve Data: This is achieved by clicking 'Save,' which prompts the user to name and save their file to the directory of the program.
-
-Request Data: This is achieved by clicking 'Open,' which prompts the user to enter the name of the file they are requesting. If it is found,
-	      the contents are displayed in the text entry box.
+Video Link: https://media.oregonstate.edu/media/t/1_lymx51an
